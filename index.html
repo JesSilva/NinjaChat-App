@@ -55,6 +55,26 @@
         </form>
     </div>
     
+    <!-- date-fns -->
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+
+    <!-- Firebase & Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBL0o7eneQjBCUyUL4R3DGDLyYdYiqfXb8",
+            authDomain: "ninjachat-1062f.firebaseapp.com",
+            databaseURL: "https://ninjachat-1062f.firebaseio.com",
+            projectId: "ninjachat-1062f",
+            storageBucket: "ninjachat-1062f.appspot.com",
+            messagingSenderId: "20622266688",
+            appId: "1:20622266688:web:539d17aa8da81fe3142aa5"
+        };
+        // Inicialização
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
 
     <script src="scripts/chat.js"></script>
     <script src="scripts/ui.js"></script>
